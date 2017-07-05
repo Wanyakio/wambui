@@ -1,0 +1,67 @@
+/* General styles          */
+*{
+  box-sizing: border-box;
+  padding:0;
+  margin:0;
+}
+body{
+  /*font-family for entire webpge*/
+  padding-left: 10%;
+  padding-right: 10%
+}
+
+h1,h2,h3{
+  /*Font family for header*/
+}
+p{
+
+}
+a{
+  text-decoration: none; /* remove underline from anchor links */
+}
+/*header Styles*/
+header{
+}
+nav{
+  /* navigation links*/
+}
+nav a{
+  /*links inside navigation*/
+
+}
+/* section #about */
+#about img{
+  width:100%;
+}
+/* section form*/
+
+#getinvolved label{
+  display:block;
+
+}
+#getinvolved input{
+  padding:10px;
+  width:100%;
+  
+}
+#getinvolved textarea{
+  max-width:300px;
+  padding: 8px;
+
+}
+}
+#contact{
+  margin-right: auto;
+}
+
+
+/*footer styles*/
+footer{
+  display:block;
+}
+footer i{
+  text-decoration: none;
+   }
+
+
+/*RESPONSIVE STYLES*/

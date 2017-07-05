@@ -1,0 +1,92 @@
+/* General styles          */
+*{
+  box-sizing: border-box;
+  padding:0;
+  margin:0;
+}
+
+body{
+  /*font-family for entire webpge*/
+
+  padding-left: 10%;
+  padding-right: 10%;
+  }
+
+h1,h2,h3{
+  font-family: 'Open Sans', sans-serif;
+  /*Font family for header*/
+  }
+  h4{
+    font-size:20px;
+  }
+p,a{
+font-family: 'Merriweather', serif;
+  }
+a{
+  text-decoration: none; /* remove underline from anchor links */
+  padding-top: 8%;
+  }
+/*header Styles*/
+header{
+  font-family: 'Lato', sans-serif;
+  }
+/* navigation links*/
+nav{
+  display:flex; /*create a flex layout context */
+
+  }
+nav a{
+  /*links inside navigation*/
+  padding-left: 10px;
+  flex-grow: 1 /* distribute the spaces equally */
+
+  }
+/* section #about */
+#about img{
+  width:100%;
+  }
+/* section form*/
+
+#getinvolved label{
+  display:block;
+
+  }
+#getinvolved input{
+  padding:10px;
+  width:100%;
+
+  }
+#getinvolved textarea{
+  max-width:300px;
+  padding: 8px;
+
+  }
+
+  button{
+    background-color: powderblue;
+    padding:1%;
+    max-width:100%;
+  }
+
+#contact{
+  margin-right: auto;
+  }
+
+
+
+/*footer styles*/
+footer{
+  display:block;
+  text-align: center;
+  }
+footer i{
+  text-decoration: none;
+  }
+
+  footer a{
+    display:block;
+    padding:1%;
+  }
+
+
+/*RESPONSIVE STYLES*/
