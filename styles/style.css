@@ -13,22 +13,24 @@ body{
   }
 
 h1,h2,h3{
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Merriweather', sans-serif;
   /*Font family for header*/
   }
   h4{
     font-size:20px;
   }
 p,a{
-font-family: 'Merriweather', serif;
+font-family: 'Open Sans', serif;
+line-height:1.9;
   }
 a{
   text-decoration: none; /* remove underline from anchor links */
   padding-top: 8%;
   }
 /*header Styles*/
-header{
+header  h1 nav a {
   font-family: 'Lato', sans-serif;
+  background-color: #45BFB2;
   }
 /* navigation links*/
 nav{
@@ -41,11 +43,19 @@ nav a{
   flex-grow: 1 /* distribute the spaces equally */
 
   }
+  #home img{
+    width:100%;
+  }
+  /* section front page */
+
 /* section #about */
 #about img{
   width:100%;
   }
 /* section form*/
+#getinvolved{
+  background-color: #BEBFA9;
+}
 
 #getinvolved label{
   display:block;
@@ -62,30 +72,25 @@ nav a{
 
   }
 
-  button{
-    background-color: powderblue;
-    padding:1%;
-    max-width:100%;
-  }
-
 #contact{
   margin-right: auto;
   }
-
 
 
 /*footer styles*/
 footer{
   display:block;
   text-align: center;
-  }
-footer i{
+  background-color: #45BFB2;
+  padding-top: 40px;
+  padding-bottom: 40px;
   text-decoration: none;
-  }
+ }
 
-  footer a{
+  footer{
     display:block;
     padding:1%;
+
   }
 
 
