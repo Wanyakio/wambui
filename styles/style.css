@@ -85,6 +85,35 @@ nav a{
   background-color: rgba(2, 195, 154,  0.5);
 
 }
+
+/*wishlist*/
+#wishlist h2{
+  text-align: center;
+}
+  #wishlist h2:hover{
+    color:#FFC473;
+  }
+
+.wishpic{
+  height:30vw;
+  width:30vw;
+  border-radius: 50%;
+  background-size: cover;
+}
+
+.books{background-image: url(/images/exercisebook.jpg);}
+
+.food{background-image: url(/images/food.jpg);}
+
+.shoes{background-image: url(/images/shoes.jpg);}
+
+.beddings{background-image: url(/images/beddings.jpg);}
+
+.wheelchairs{background-image: url(/images/wheelchair.jpg);}
+
+.workers{background-image: url(/images/workers.jpg);}
+
+
 /* section form*/
 #getinvolved{
   padding-top: 19px;
@@ -121,7 +150,7 @@ footer{
     padding:5%;
   }
   button{
-    padding:5% 10%;
+    padding:3% 3%;
   }
   button:hover{
     background-color: #FFC473;
