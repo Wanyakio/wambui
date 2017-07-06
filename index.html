@@ -1,70 +1,35 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Ongata Rongai Special Home Care and Training Centre</title>
-    <!--step one:view will adjust to each device-->
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+---
+layout: default
+---
 
-    <!--stylesheets -->
-    <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.3.7/gridlex.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Lato|Merriweather|Open+Sans" rel="stylesheet">
-    <link rel="stylesheet" href="styles/style.css">
-
-
-    <!--Scripts  -->
-    <script
-     src="https://use.fontawesome.com/5d7fd513f6.js"></script>
-  </head>
-  <!--Wep page begins here -->
-  <body>
-    <header id="home" class="grid">
-      <div class="col-5">
-        <h1> Ongata Rongai Special Home Care
-          and Training Centre </h1>
-      </div>
-      <!--This is where the heading start-->
-      <div class="col-7">
-        <nav>
-          <a href="#home">Home</a>
-        <!--The hashtag calls the id-->
-          <a href="#about">About</a>
-          <a href="#mission">Mission</a>
-          <a href="#ourwork">Our Work</a>
-          <a href="#getinvolved">Get Involved</a>
-          <a href="#contact"></a>
-          <a href="https://www.facebook.com/pg/OngataRongaiSpecialHomeCareAndTrainingCentre/about/?ref=page_internal"><i class="fa fa-facebook-square" aria-hidden="true"></i> Follow us</a>
-        </nav>
-      </div>
-      <!--homepage picture/video-->
-        <div class="grid">
-          <div class="col-6">
-           <img src="images/firstpage.jpg" alt="people">
-          </div>
-          <div class="col-6">
-            <a href="#get involved">Get Involved</a>
-          </div>
-        </div>
-    </header>
     <!--This is where the header stops-->
-    <section id="about" class="grid">
+    <section id="whatwedo" class="grid">
       <div class="col-6">
-         <h2>About Us</h2>
-         <p> We are a boarding and educational facility located outside of Nairobi, Kenya. Our residents are children and adults with a variety of needs and disabilities. Some of these individuals have been abandoned and/or come from abusive and neglectful families.
-         </p>
+         <h2>Our programs</h2>
+         <ul>
+            <li>Boarding Facility: Provided to all children to enhance proper care, love and protection.</li>
+            <li>Physiotherapy/ Occupational Therapy Sessions: Provided for children to improve the body structure and mobility training.</li>
+            <li>Education: To ensure children learn good grooming skills, classroom learning and life skills.</li>
+            <li>Feeding Program: Offered to children with difficulties in feeding</li>
+            <li>Guidance and counseling services: Provided to parents and older children in order to attempt to improve relations and reunite families.</li>
+         </ul>
       </div> <!-- .col-6 -->
       <div class="col-6">
          <img src="images/gallery-activities.jpg" alt="activities">
       </div> <!-- .col-6 -->
-      <div class="col-6">
-         <img src="images/staff.jpg" alt="people">
-      </div> <!-- .col-6 -->
-      <div class="col-6">
-         <h2>Mission</h2>
-         <p>ORHSC aims at making a difference in lives of children in the society and hence meet their special demands today and be independent tomorrow.To achieve knowledge and practical potential for self-independence among children living with disabilities in our society.
-       </p>
-      </div> <!-- .col-6 -->
+    </section>
+      <section id="mission" class="grid">
+        <div class="col-6">
+           <img src="images/staff.jpg" alt="people">
+        </div> <!-- .col-6 -->
+        <div class="col-6">
+           <h2>Mission</h2>
+           <p>ORHSC aims at making a difference in lives of children in the society and hence meet their special demands today and be independent tomorrow.To achieve knowledge and practical potential for self-independence among children living with disabilities in our society.
+           </p>
+        </div> <!-- .col-6 -->
+      </section>
 
+    <section id="ourwork" class="grid">
       <div class="col-6">
          <h2>Our work</h2>
          <p> To provide quality care to children with special needs, orphans and vulnerable children. To give a sense of self-worth and esteem for children with special needs. To train and educate parents on handling children with special needs. To create awareness and importance of individuals with disabilities in the society.
@@ -74,46 +39,3 @@
          <img src="images/homepage.jpg" alt="kids">
       </div> <!-- .col-6 -->
     </section>
-
-   <section id="getinvolved">
-      <form class="grid" method="POST" action="http://formspree.io/margaretnyakio18@yahoo.com">
-        <div class="col-6">
-          <label>Your Name</label>
-          <input type="name" name="name" placeholder="Your name">
-        </div>
-        <div class="col-6">
-          <label>Your Email</label>
-          <input type="email" name="email" placeholder="Your email">
-        </div>
-        <div class="col-12">
-          <label>How you can help?</label>
-          <select required>
-            <option value="donation">Interested in making a donation</option>
-            <option value="volunteering">Interested in volunteering</option>
-            <option value="information">I need more information</option>
-          </select>
-        </div>
-        <div class="col-12">
-          <label>Your message to us</label>
-          <textarea name="message" placeholder=""></textarea>
-        </div>
-        <div class="col-12">
-          <button type="submit">Send</button>
-        </div>
-      </form>
-   </section>
-
-    <footer id="contact">
-      <h4>Contacts Us:</h4>
-      <div class="col-12">
-        <a href="mailto:ongataspecialhome@yahoo.com">email:ongataspecialhome@yahoo.com
-        </a>
-      </div>
-        <div class="col-12">
-          <a href="tel:+2540725745184">tel:+254-0725-745-184
-          </a>
-        </div>
-    </footer>
-
-  </body>
-</html>

@@ -5,7 +5,7 @@
   margin:0;
 }
 
-body{
+section, footer{
   /*font-family for entire webpge*/
 
   padding-left: 10%;
@@ -14,63 +14,82 @@ body{
 
 h1,h2,h3{
   font-family: 'Merriweather', sans-serif;
+  padding:2% 0;
   /*Font family for header*/
   }
-  h4{
-    font-size:20px;
+  h3{
+   font-family: 'Lato', sans-serif;
+   text-align: center;
+
   }
-p,a{
+  p{
+    padding-top: 2%;
+  }
+p,a,ul{
 font-family: 'Open Sans', serif;
 line-height:1.9;
   }
 a{
   text-decoration: none; /* remove underline from anchor links */
   padding-top: 8%;
+  color:inherit;
+  }
+a:hover{
+  color:#FFC473;
+}
+
+
+  .imagecover{
+    background-color: rgba(2, 195, 154, 0.5)
   }
 /*header Styles*/
-header  h1 nav a {
+header{
+  background-image:url("../images/firstpage.jpg");
+  min-height: 100vh;
+  background-size: cover;
+  display:flex;
+  align-content: space-between;
+  flex-direction: column;
+  justify-content: space-between;
+  color: white;
+}
+footer {
   font-family: 'Lato', sans-serif;
-  background-color: #45BFB2;
+  background-color: #3097A4;
   }
 /* navigation links*/
 nav{
-  display:flex; /*create a flex layout context */
+  display:flex;
+  background-color:rgba(2, 195, 154, 0.5)
+
+   padding-bottom: 2%;
+   /*create a flex layout context */
 
   }
 nav a{
   /*links inside navigation*/
   padding-left: 10px;
-  flex-grow: 1 /* distribute the spaces equally */
+  flex-grow: 1 ;
+
+
+  /* distribute the spaces equally */
 
   }
-  #home img{
+  /* all images  */
+  img{
     width:100%;
   }
   /* section front page */
+.description p{
+  padding: 2%;
+  background-color: rgba(2, 195, 154,  0.5);
 
-/* section #about */
-#about img{
-  width:100%;
-  }
+}
 /* section form*/
 #getinvolved{
+  padding-top: 19px;
   background-color: #BEBFA9;
 }
-
-#getinvolved label{
-  display:block;
-
-  }
-#getinvolved input{
-  padding:10px;
-  width:100%;
-
-  }
-#getinvolved textarea{
-  max-width:300px;
-  padding: 8px;
-
-  }
 
 #contact{
   margin-right: auto;
@@ -83,15 +102,29 @@ footer{
   text-align: center;
   background-color: #45BFB2;
   padding-top: 40px;
-  padding-bottom: 40px;
-  text-decoration: none;
+  padding-bottom: 10px;
+  text-decoration: none
+ }
+ label{
+   width:100%;
+ }
+ input{
+   width:100%;
+   padding:1%;
  }
 
-  footer{
-    display:block;
-    padding:1%;
-
+  select{
+    width:100%;
   }
-
+  textarea{
+    width:100%;
+    padding:5%;
+  }
+  button{
+    padding:5% 10%;
+  }
+  button:hover{
+    background-color: #FFC473;
+  }
 
 /*RESPONSIVE STYLES*/
