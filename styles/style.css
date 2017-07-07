@@ -4,19 +4,75 @@
   padding:0;
   margin:0;
 }
+/* navigation links*/
+nav{
+  display:flex;
+  background-color:rgba(2, 195, 154, 0.5)
 
-section, footer{
-  /*font-family for entire webpge*/
+   padding-bottom: 2%;
+   /*create a flex layout context */
 
-  padding-left: 10%;
-  padding-right: 10%;
   }
+nav a{
+  /*links inside navigation*/
+  padding-left: 10px;
+  flex-grow: 1 ;
+  /* distribute the spaces equally */
+  }
+  a{
+    text-decoration: none; /* remove underline from anchor links */
+    padding-top: 8%;
+    color:inherit;
+    }
+  a:hover{
+    color:#FFC473;
+  }
+
+/* all images  */
+img{
+  width:100%;
+}
+
+i{
+  display:none !important;
+}
+@media all and (max-width: 1000px)
+{
+  i{
+    display:inline-block !important
+  }
+  header nav{
+    display:none !important;
+  }
+}
+#mobile-nav{
+  position:fixed;
+  top:0;
+  left:0;
+  height:100vh;
+  width: 100vw;
+  background-color:grey;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align:center;
+  visibility: hidden;
+}
+#mobile-nav a{
+  coor:#fff;
+  text-decoration:none;
+  text-transform: uppercase;
+}
+
+
 
 h1,h2,h3{
   font-family: 'Merriweather', sans-serif;
   padding:2% 0;
   /*Font family for header*/
   }
+
   h3{
    font-family: 'Lato', sans-serif;
    text-align: center;
@@ -29,15 +85,6 @@ p,a,ul{
 font-family: 'Open Sans', serif;
 line-height:1.9;
   }
-a{
-  text-decoration: none; /* remove underline from anchor links */
-  padding-top: 8%;
-  color:inherit;
-  }
-a:hover{
-  color:#FFC473;
-}
-
 
   .imagecover{
     background-color: rgba(2, 195, 154, 0.5)
@@ -53,32 +100,9 @@ header{
   justify-content: space-between;
   color: white;
 }
-footer {
-  font-family: 'Lato', sans-serif;
-  background-color: #3097A4;
-  }
-/* navigation links*/
-nav{
-  display:flex;
-  background-color:rgba(2, 195, 154, 0.5)
-
-   padding-bottom: 2%;
-   /*create a flex layout context */
-
-  }
-nav a{
-  /*links inside navigation*/
-  padding-left: 10px;
-  flex-grow: 1 ;
 
 
-  /* distribute the spaces equally */
 
-  }
-  /* all images  */
-  img{
-    width:100%;
-  }
   /* section front page */
 .description p{
   padding: 2%;
@@ -126,6 +150,16 @@ nav a{
 
 
 /*footer styles*/
+section, footer{
+  padding-left: 10%;
+  padding-right: 10%;
+  }
+
+footer {
+  font-family: 'Lato', sans-serif;
+  background-color: #3097A4;
+  }
+
 footer{
   display:block;
   text-align: center;
