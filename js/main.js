@@ -16,5 +16,9 @@ console.log('Document Ready!');
   });
   //click the 'x'
   //close the mobile navigation
-
+  $("#mobile-nav *").click(function(){
+    $('#mobile-nav').css({
+      visibility:'hidden'
+    });
+  })
 });

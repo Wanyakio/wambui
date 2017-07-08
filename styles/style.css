@@ -4,12 +4,27 @@
   padding:0;
   margin:0;
 }
+
+/* all images  */
+img{
+  width:100%;
+}
+
+
+
+/*helper class to get rid of padding*/
+
+.nopadding{
+  padding:0
+}
+
 /* navigation links*/
+
 nav{
   display:flex;
-  background-color:rgba(2, 195, 154, 0.5)
-
-   padding-bottom: 2%;
+  background-color: #FF9009;
+  padding-bottom: 2%;
+  width:58vw;
    /*create a flex layout context */
 
   }
@@ -21,21 +36,155 @@ nav a{
   }
   a{
     text-decoration: none; /* remove underline from anchor links */
-    padding-top: 8%;
-    color:inherit;
+    padding-top:4%;
+    color:#118C4E;
     }
   a:hover{
+    color:#FF9009;
+  }
+  header a{
+    background-color: #C1E1A6;
+  }
+
+/*header Styles*/
+header{
+  background-image:url("../images/firstpage.jpg");
+  background-position:50% 0%;
+  min-height: 100vh;
+  background-size: cover;
+  color: #118C4E;
+
+}
+
+.imagecover{
+  background-color:rgba(193, 225, 166, 0.64);
+  display:flex;
+  align-content: space-between;
+  flex-direction: column;
+  justify-content: space-between;
+    min-height: 100vh;
+}
+
+
+
+.fa-bars{
+  display:none;
+  color: #000000;
+  font-size: 2.7rem;
+  position:fixed;
+  top: 2%;
+  right: 2%
+}
+
+  /* section front page */
+.description p{
+  padding: 2%;
+  background-color:#C1E1A6;
+
+}
+
+/* fonts style for all h1,h2,h3 */
+
+h1{
+  font-family: 'Merriweather', sans-serif;
+  padding:2% 0;
+  margin-left: 5%;
+  }
+
+h2 {
+  font-family: 'Merriweather', sans-serif;
+  padding:2% 0;
+  }
+
+  h3{
+   font-family: 'Lato', sans-serif;
+   text-align: center;
+   padding:2% 0;
+
+  }
+
+/* all paragraph,list, links */
+  p,a,ul{
+  font-family: 'Open Sans', serif;
+  line-height:1.9;
+    }
+  p{
+    padding-top: 2%;
+   }
+ footer p{
+   text-align:center;
+ }
+/*wishlist styles*/
+#getinvolved h2{
+  text-align: center;
+}
+  #getinvolved h2:hover{
     color:#FFC473;
   }
 
-/* all images  */
-img{
-  width:100%;
+.wishpic{
+  height:25.6vw;
+  width:25.6vw;
+  margin:auto;
+  border-radius: 50%;
+  background-size: cover;
 }
 
-i{
-  display:none !important;
-}
+.books{background-image: url(/images/exercisebook.jpg);}
+
+.food{background-image: url(/images/food.jpg);}
+
+.shoes{background-image: url(/images/shoes.jpg);}
+
+.beddings{background-image: url(/images/beddings.jpg);}
+
+.wheelchairs{background-image: url(/images/wheelchair.jpg);}
+
+.workers{background-image: url(/images/workers.jpg);}
+
+/*footer styles*/
+section, footer{
+  padding-left: 10%;
+  padding-right: 10%;
+  }
+
+footer {
+  font-family: 'Lato', sans-serif;
+  background-color: #3097A4;
+  }
+
+footer{
+  display:block;
+  text-align: center;
+  background-color: #C1E1A6;
+  padding-top: 40px;
+  padding-bottom: 10px;
+  text-decoration: none
+ }
+ label{
+   width:100%;
+ }
+ input{
+   width:100%;
+   padding:1%;
+ }
+
+  select{
+    width:100%;
+    background-color:white;
+  }
+  textarea{
+    width:100%;
+    padding:5%;
+  }
+  button{
+    padding:3% 3%;
+  }
+  button:hover{
+    background-color: #FFC473;
+  }
+
+/*RESPONSIVE STYLES*/
 @media all and (max-width: 1000px)
 {
   i{
@@ -44,6 +193,7 @@ i{
   header nav{
     display:none !important;
   }
+
 }
 #mobile-nav{
   position:fixed;
@@ -66,128 +216,18 @@ i{
 }
 
 
-
-h1,h2,h3{
-  font-family: 'Merriweather', sans-serif;
-  padding:2% 0;
-  /*Font family for header*/
+@media all and (max-width:768px){
+  .wishpic{
+    width:64vw;
+    height:64vw;
   }
-
-  h3{
-   font-family: 'Lato', sans-serif;
-   text-align: center;
-
-  }
-  p{
-    padding-top: 2%;
-  }
-p,a,ul{
-font-family: 'Open Sans', serif;
-line-height:1.9;
-  }
-
-  .imagecover{
-    background-color: rgba(2, 195, 154, 0.5)
-  }
-/*header Styles*/
-header{
-  background-image:url("../images/firstpage.jpg");
-  min-height: 100vh;
-  background-size: cover;
-  display:flex;
-  align-content: space-between;
-  flex-direction: column;
-  justify-content: space-between;
-  color: white;
+.mobile-Flip{
+  flex-direction:column-reverse;
 }
-
-
-
-  /* section front page */
-.description p{
-  padding: 2%;
-  background-color: rgba(2, 195, 154,  0.5);
-
+h1,h2{
+  padding:10% 2%;
 }
-
-/*wishlist*/
-#wishlist h2{
-  text-align: center;
+select {
+  width: 100%;
+  background-color: white;
 }
-  #wishlist h2:hover{
-    color:#FFC473;
-  }
-
-.wishpic{
-  height:30vw;
-  width:30vw;
-  border-radius: 50%;
-  background-size: cover;
-}
-
-.books{background-image: url(/images/exercisebook.jpg);}
-
-.food{background-image: url(/images/food.jpg);}
-
-.shoes{background-image: url(/images/shoes.jpg);}
-
-.beddings{background-image: url(/images/beddings.jpg);}
-
-.wheelchairs{background-image: url(/images/wheelchair.jpg);}
-
-.workers{background-image: url(/images/workers.jpg);}
-
-
-/* section form*/
-#getinvolved{
-  padding-top: 19px;
-  background-color: #BEBFA9;
-}
-
-#contact{
-  margin-right: auto;
-  }
-
-
-/*footer styles*/
-section, footer{
-  padding-left: 10%;
-  padding-right: 10%;
-  }
-
-footer {
-  font-family: 'Lato', sans-serif;
-  background-color: #3097A4;
-  }
-
-footer{
-  display:block;
-  text-align: center;
-  background-color: #45BFB2;
-  padding-top: 40px;
-  padding-bottom: 10px;
-  text-decoration: none
- }
- label{
-   width:100%;
- }
- input{
-   width:100%;
-   padding:1%;
- }
-
-  select{
-    width:100%;
-  }
-  textarea{
-    width:100%;
-    padding:5%;
-  }
-  button{
-    padding:3% 3%;
-  }
-  button:hover{
-    background-color: #FFC473;
-  }
-
-/*RESPONSIVE STYLES*/
