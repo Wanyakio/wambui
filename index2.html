@@ -1,5 +1,19 @@
 ---
 layout: default
+donation
+  - image: images/exercisebook.jpg
+    text: jttjtjyt
+  - image: images/food.jpg
+    text: jttjtjyt
+  -image: images/shoes.jpg
+   text: jttjtjyt
+  -image: images/beddings.jpg
+   text: jttjtjyt
+ - image: images/wheelchair.jpg
+   text: jttjtjyt
+ -image: images/workers.jpg
+  text: jttjtjyt
+
 ---
 
     <!--This is where the header stops-->
@@ -44,13 +58,13 @@ layout: default
       <h2>How Your Donation Can Help ;</h2>
       </div>
 
-      {{}}
+      {% for donatemoney in page.donation %}
     <div class="col-4_sm-12">
-      <div class="wishpic books"></div>
-      <p>
-      USD
-      $10	---------- Can buy exercise books for a month.</p>
+      <div class="wishpic" style="background-image:url('{{donatemoney.image}}')"></div>
+      <p>{{donatemoney.text}}</p>
     </div>
+    {% endfor %}
+
     <div class="col-4_sm-12">
      <div class="wishpic food"></div>
       <p>
