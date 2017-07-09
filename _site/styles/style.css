@@ -1,0 +1,232 @@
+/* General styles          */
+*{
+  box-sizing: border-box;
+  padding:0;
+  margin:0;
+}
+
+/* all images  */
+img{
+  width:100%;
+}
+
+
+
+/*helper class to get rid of padding*/
+
+.nopadding{
+  padding:0
+}
+
+/* navigation links*/
+
+nav{
+  display:flex;
+  padding-bottom: 2%;
+  width:58vw;
+   /*create a flex layout context */
+
+  }
+nav a{
+  /*links inside navigation*/
+  padding-left: 10px;
+  flex-grow: 1 ;
+  /* distribute the spaces equally */
+  }
+  a{
+    text-decoration: none; /* remove underline from anchor links */
+    padding-top:4%;
+    color:#118C4E;
+    }
+  a:hover{
+    color:#FF9009;
+  }
+  header a{
+    background-color: #C1E1A6;
+  }
+
+/*header Styles*/
+header{
+  background-image:url("../images/firstpage.jpg");
+  background-position:50% 0%;
+  min-height: 100vh;
+  background-size: cover;
+
+
+}
+
+.imagecover{
+  background-color:rgba(193, 225, 166, 0.64);
+  display:flex;
+  align-content: space-between;
+  flex-direction: column;
+  justify-content: space-between;
+    min-height: 100vh;
+}
+
+
+
+.fa-bars{
+  display:none;
+  color: #000000;
+  font-size: 2.7rem;
+  position:fixed;
+  top: 2%;
+  right: 2%
+}
+
+  /* section front page */
+.description p{
+  padding: 2%;
+  background-color:#C1E1A6;
+
+}
+
+/* fonts style for all h1,h2,h3 */
+
+h1{
+  font-family: 'Merriweather', sans-serif;
+  margin-left: 4%;
+  margin-top: 0%;
+  }
+
+h2 {
+  font-family: 'Merriweather', sans-serif;
+  padding:2% 0;
+  }
+
+  h3{
+   font-family: 'Lato', sans-serif;
+   text-align: center;
+   padding:2% 0;
+
+  }
+
+/* all paragraph,list, links */
+  p,a,ul{
+  font-family: 'Open Sans', serif;
+  line-height:1.9;
+    }
+  p{
+    padding-top: 2%;
+   }
+ footer p{
+   text-align:center;
+ }
+/*wishlist styles*/
+#getinvolved h2{
+  text-align: center;
+}
+  #getinvolved h2:hover{
+    color:#FFC473;
+  }
+
+.wishpic{
+  height:25.6vw;
+  width:25.6vw;
+  margin:auto;
+  border-radius: 50%;
+  background-size: cover;
+}
+
+.books{background-image: url(/images/exercisebook.jpg);}
+
+.food{background-image: url(/images/food.jpg);}
+
+.shoes{background-image: url(/images/shoes.jpg);}
+
+.beddings{background-image: url(/images/beddings.jpg);}
+
+.wheelchairs{background-image: url(/images/wheelchair.jpg);}
+
+.workers{background-image: url(/images/workers.jpg);}
+
+/*footer styles*/
+section, footer{
+  padding-left: 10%;
+  padding-right: 10%;
+  }
+
+footer {
+  font-family: 'Lato', sans-serif;
+  background-color: #3097A4;
+  }
+
+footer{
+  display:block;
+  text-align: center;
+  background-color: #C1E1A6;
+  padding-top: 40px;
+  padding-bottom: 10px;
+  text-decoration: none
+ }
+ label{
+   width:100%;
+ }
+ input{
+   width:100%;
+   padding:1%;
+ }
+
+  select{
+    width:100%;
+    background-color:white;
+  }
+  textarea{
+    width:100%;
+    padding:5%;
+  }
+  button{
+    padding:3% 3%;
+  }
+  button:hover{
+    background-color: #FFC473;
+  }
+
+/*RESPONSIVE STYLES*/
+@media all and (max-width: 1000px)
+{
+  i{
+    display:inline-block !important
+  }
+  header nav{
+    display:none !important;
+  }
+
+}
+#mobile-nav{
+  position:fixed;
+  top:0;
+  left:0;
+  height:100vh;
+  width: 100vw;
+  background-color:grey;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align:center;
+  visibility: hidden;
+}
+#mobile-nav a{
+  coor:#fff;
+  text-decoration:none;
+  text-transform: uppercase;
+}
+
+
+@media all and (max-width:768px){
+  .wishpic{
+    width:64vw;
+    height:64vw;
+  }
+.mobile-Flip{
+  flex-direction:column-reverse;
+}
+h1,h2{
+  padding:10% 2%;
+}
+select {
+  width: 100%;
+  background-color: white;
+}
