@@ -1,10 +1,15 @@
-/* General styles          */
+/* Colors : #C1E1A6 light green */
+
 *{
   box-sizing: border-box;
   padding:0;
   margin:0;
 }
 
+
+body {
+  color: rgb(30,30,30);
+}
 /* all images  */
 img{
   width:100%;
@@ -18,19 +23,36 @@ img{
   padding:0
 }
 
+.padded {
+  padding:5%;
+}
+
+.padded-10 {
+  padding: 10%;
+}
+.vert-padded {
+  padding: 5% 0;
+}
+
+.right {
+  text-align: right;
+}
+
+.center {
+  text-align:center;
+}
 /* navigation links*/
 
 nav{
-  display:flex;
-  padding-bottom: 2%;
-  width:58vw;
+  padding: 2%;
+  width:100%;
    /*create a flex layout context */
 
   }
 nav a{
   /*links inside navigation*/
-  padding-left: 10px;
-  flex-grow: 1 ;
+  padding-left: 5%;
+  color: white;
   /* distribute the spaces equally */
   }
   a{
@@ -41,9 +63,6 @@ nav a{
   a:hover{
     color:#FF9009;
   }
-  header a{
-    background-color: #C1E1A6;
-  }
 
 /*header Styles*/
 header{
@@ -51,12 +70,10 @@ header{
   background-position:50% 0%;
   min-height: 100vh;
   background-size: cover;
-
-
 }
 
 .imagecover{
-  background-color:rgba(193, 225, 166, 0.64);
+  background-color:rgba(193, 225, 166, 0.3);
   display:flex;
   align-content: space-between;
   flex-direction: column;
@@ -77,7 +94,7 @@ header{
 
   /* section front page */
 .description p{
-  padding: 2%;
+  padding: 2% 10%;
   background-color:#C1E1A6;
 
 }
@@ -86,8 +103,9 @@ header{
 
 h1{
   font-family: 'Merriweather', sans-serif;
-  margin-left: 4%;
-  margin-top: 0%;
+  margin-left: 5%;
+  margin-top: 1%;
+  color: white;
   }
 
 h2 {
@@ -110,20 +128,27 @@ h2 {
   p{
     padding-top: 2%;
    }
- footer p{
-   text-align:center;
- }
+
+   ul {
+       list-style-position: inside;
+   }
+
+
 /*wishlist styles*/
 #getinvolved h2{
   text-align: center;
 }
-  #getinvolved h2:hover{
-    color:#FFC473;
-  }
+
+#getinvolved p span {
+  color: #99ce6d ;
+  font-weight: bold;
+  margin-right: 5px;
+}
+
 
 .wishpic{
-  height:25.6vw;
-  width:25.6vw;
+  width: 100%;
+  padding: 50%;
   margin:auto;
   border-radius: 50%;
   background-size: cover;
@@ -154,14 +179,19 @@ footer {
 
 footer{
   display:block;
-  text-align: center;
   background-color: #C1E1A6;
   padding-top: 40px;
   padding-bottom: 10px;
   text-decoration: none
  }
+ form {
+   text-align: left;
+ }
+
  label{
    width:100%;
+   margin-bottom: 0.5em;
+   display: block;
  }
  input{
    width:100%;
@@ -216,10 +246,7 @@ footer{
 
 
 @media all and (max-width:768px){
-  .wishpic{
-    width:64vw;
-    height:64vw;
-  }
+
 .mobile-Flip{
   flex-direction:column-reverse;
 }
